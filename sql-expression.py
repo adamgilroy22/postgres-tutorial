@@ -39,3 +39,20 @@ track_table = Table(
 
 # making the connection
 with db.connect() as connection:
+    # Query 1 - select all records from the "Artist" table
+    select_query = artist_table.select()
+
+    results = connection.execute(select_query)
+    for result in results:
+        print(results)
+
+    # Query 2 - select only the "Name" column from the "Artist table"
+
+    # Query 3 - select only "Queen from the "Artist" table
+
+    # Query 4 - select only by "ArtistId" #51 from the "Artist" table
+
+    # Query 5 - select only albums with "ArtistId" #51 on the "Album" table
+
+    # Query 6 - select all tracks where the composer is "Queen" from
+    # the "Track" table
