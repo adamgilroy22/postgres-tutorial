@@ -29,3 +29,13 @@ session = Session()
 
 # creating the database using declarative_base subclass
 base.metadata.create_all(db)
+
+
+# creating records on our Programmer table
+ada_lovelace = Programmer(
+    first_name="Ada",
+    last_name="Lovelace",
+    gender="Female",
+    nationality="British",
+    famous_for="First Programmer",
+)
