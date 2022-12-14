@@ -7,3 +7,6 @@ from sqlalchemy import (
 db = create_engine("postgresql:///chinook")
 
 meta = MetaData(db)
+
+# making the connection
+with db.connect() as connection:
