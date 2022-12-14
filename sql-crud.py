@@ -82,11 +82,11 @@ tim_berners_lee = Programmer(
 
 # add each instance of our programmers to our session
 # session.add(ada_lovelace)
-session.add(alan_turing)
-session.add(grace_hopper)
-session.add(margaret_hamilton)
-session.add(bill_gates)
-session.add(tim_berners_lee)
+# session.add(alan_turing)
+# session.add(grace_hopper)
+# session.add(margaret_hamilton)
+# session.add(bill_gates)
+# session.add(tim_berners_lee)
 
 # commit our session to the database
 session.commit()
@@ -99,5 +99,6 @@ for programmer in programmers:
         programmer.first_name + " " + programmer.last_name,
         programmer.gender,
         programmer.nationality,
-        programmer.famous_for
+        programmer.famous_for,
+        sep=" | "
     )
