@@ -39,3 +39,9 @@ ada_lovelace = Programmer(
     nationality="British",
     famous_for="First Programmer",
 )
+
+# add each instance of our programmers to our session
+session.add(ada_lovelace)
+
+# commit our session to the database
+session.commit()
