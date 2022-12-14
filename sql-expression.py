@@ -59,4 +59,4 @@ with db.connect() as connection:
 
     results = connection.execute(select_query)
     for result in results:
-        print(results)
+        print(result)
