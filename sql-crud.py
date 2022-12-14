@@ -45,3 +45,14 @@ session.add(ada_lovelace)
 
 # commit our session to the database
 session.commit()
+
+# query the database to find all Programmers
+programmers = session.query(Programmer)
+for programmer in programmers:
+    print(
+        programmer.id,
+        programmer.first_name + " " + programmer.last_name,
+        programmer.gender,
+        programmer.nationality,
+        programmer.famous_for
+    )
